@@ -1,0 +1,54 @@
+//Binary Search
+#include<stdio.h>
+#include<conio.h>
+int count;
+void main()
+{
+	int arr[50],n,ele,i,mid,low=0,high,found=0;                 //variable declaration...............
+	printf("enter the number of elements do you want to enter");
+	scanf("%d",&n);
+	printf("enter the elements in array in sorted order");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("enter the element you want to search");
+	scanf("%d",&ele);
+	count++;
+	high=n-1;
+	count++;
+	while(low<=high)                            //logic..............
+	{	
+		count++;
+		mid=(low+high)/2;
+		if(ele<arr[mid])
+		{
+			count++;
+			high=mid-1;
+			count++;
+		}
+		else if(ele>arr[mid])
+		{
+			count++;
+			low=mid+1;
+			count++;
+		}
+		else if(ele==arr[mid])
+		{
+			count++;
+			printf("element found at location%d",mid);
+			count++;
+			found=1;
+			break;
+		}
+		
+		
+	}
+	if(!found)
+	{
+		printf("element not found");
+	}
+		printf("count=%d",count);
+	
+	getch();
+}
