@@ -1,0 +1,18 @@
+// sum and difference of two numbers
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n,m;       				           //variable declaration............
+    float c,d;
+    scanf("%d %d", &n, &m);
+    printf("%d %d",n+m,n-m);      //addition and substraction of two numbers..........
+    printf("\n");
+    scanf("%f %f", &c, &d);
+    printf("%0.1f %0.1f",c+d, c-d);    //addition and substraction of two float variable
+    return 0;
+}
+
