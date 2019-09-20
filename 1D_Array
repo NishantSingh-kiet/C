@@ -1,0 +1,27 @@
+  //1D Array in C
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+	
+  int arr[1000],n,i,sum=0;                    //variable declaration...............
+  printf("Enter the number of terms");
+  scanf("%d",&n);
+  printf("Enter the array elements");
+  
+  for(i=1;i<=n;i++)
+                             //loop to check no. of terms..........
+		{		   
+    		scanf("%d", &arr[i]);	          //logic.............
+   			sum=sum+arr[i];
+		}
+   
+  printf("The sum of %d terms=%d",n,sum);    
+  return 0;
+}
+
+
