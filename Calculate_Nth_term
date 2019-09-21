@@ -1,0 +1,26 @@
+//Calculate the nth term
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+//Complete the following function.
+
+int find_nth_term(int n, int a, int b, int c) 
+{
+    int ans=0;
+    ans=ans+n+a+b+c;                    			//logic.............................
+    return (ans);                            // return value of ans...............
+  //Write your code here.
+}
+
+int main()
+{
+    int n, a, b, c;								         // variable declaration...........
+    printf("Enter the value of n,a,b,c");
+	scanf("%d %d %d %d", &n, &a, &b, &c);
+    int ans = find_nth_term(n, a, b, c);          
+ 
+    printf("sum of %d, %d, %d, %d is=%d",n,a,b,c, ans); 
+    return 0;
+}
+
