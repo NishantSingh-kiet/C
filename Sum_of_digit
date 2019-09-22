@@ -1,0 +1,17 @@
+//WAP to print sum of digit
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,digit,sum=0;               //variable declaration..................
+	printf("enter the number");
+	scanf("%d",&n);
+	while(n!=0)                     //logic................
+	{
+	digit=n%10;
+	sum=sum+digit;
+	n=n/10;
+ 	}
+	printf("%d",sum);
+	getch();
+}
